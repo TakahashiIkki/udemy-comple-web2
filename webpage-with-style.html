@@ -4,17 +4,28 @@
         <title>WebPage With Style</title>
         <meta charset="UTF-8" />
         <style type="text/css">
-            h1 {
-                color: purple;
+            .blue {
+                color: blue;
             }
-            p {
-                color: red;
-                font-size: 250%;
+
+            .large {
+                font-size: 200%;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+            #green {
+                color: green;
             }
         </style>
     </head>
     <body>
-        <h1>新プロダクトのご紹介</h1>
-        <p>今回は新しくリリースするプロダクトの紹介をします。</p>
+        <h1 class="blue">新プロダクトのご紹介</h1>
+        <p class="blue">今回は新しくリリースするプロダクトの紹介をします。</p>
+
+        <p class="large">バーチャルリアリティが体験出来るVRゴーグルを発売します。</p>
+        <p id="green">このVRゴーグルは従来品よりも<span class="underline">解像度が高く</span>なっております。</p>
     </body>
 </html>
