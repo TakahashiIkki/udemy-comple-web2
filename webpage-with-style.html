@@ -4,30 +4,34 @@
         <title>WebPage With Style</title>
         <meta charset="UTF-8" />
         <style type="text/css">
-            .first-section {
-                background: lightgray;
-                width: 30%;
-                padding: 30px 15px;
+            .square {
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left;
             }
 
-            .second-section {
-                background: lightblue;
-                width: 30%;
+            #square-red {
+                background-color: lightcoral;
             }
 
+            #square-blue {
+                background-color: lightskyblue;
+                border: 5px black;
+                border-style: solid ridge dotted dashed;
+            }
+
+            #square-green {
+                background-color: lightgreen;
+                border-radius: 20px;
+            }
         </style>
     </head>
     <body>
-        <div class="first-section">
-            <h1 class="blue">新プロダクトのご紹介</h1>
-            <p class="blue">今回は新しくリリースするプロダクトの紹介をします。</p>
-        </div>
+        <div id="square-red" class="square"></div>
 
-        <div class="second-section">
-            <p class="large">バーチャルリアリティが体験出来るVRゴーグルを発売します。</p>
-            <p id="green">このVRゴーグルは従来品よりも<span class="underline">解像度が高く</span>なっております。</p>
-        </div>
+        <div id="square-blue" class="square"></div>
 
-        <p>Third Paragraph</p>
+        <div id="square-green" class="square"></div>
     </body>
 </html>
