@@ -5,22 +5,22 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <p>
-            <input type="text" id="inputForm">ここに名前を入力してください
-        </p>
-
-        <button id="submitButton">送信する</button>
-
-        <p id="submittedText">
-
-        </p>
-
         <script type="text/javascript">
-            document.getElementById("submitButton").onclick = function () {
-                var inputText = document.getElementById("inputForm").value;
-                // alert(inputText);
-                document.getElementById("submittedText").innerText = inputText + "さん、以下が申し込み内容です。"
-            }
+            // var init_array = new Array();
+            //
+            // init_array[0] = "pizza";
+            // init_array[1] = "chocolate";
+            //
+            // alert(init_array[1]);
+            //
+            // console.log(init_array);
+
+            var sec_array = ["おはよう", "こんにちは", "こんばんわ"];
+
+            sec_array.push("おやすみ");
+
+            sec_array.splice(1,1,"やぁ");
+            console.log(sec_array);
         </script>
     </body>
 </html>
