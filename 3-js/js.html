@@ -7,8 +7,13 @@
     <body>
         <p id="text">Hello World!!</p>
 
+        <button id="myButton" onclick="">ChangeText</button>
+
         <script type="text/javascript">
-            document.getElementById("text").innerHTML = "Hello Engineer";
+
+            document.getElementById("myButton").onclick = function () {
+                document.getElementById("text").innerText = "Button Clicked";
+            };
         </script>
     </body>
 </html>
