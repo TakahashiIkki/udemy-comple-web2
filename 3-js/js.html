@@ -5,14 +5,22 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <p id="thirdParagraph">スタイルを変更してみましょう!!</p>
+        <p>
+            <input type="text" id="inputForm">ここに名前を入力してください
+        </p>
 
-        <button id="thirdButton">スタイルを更新</button>
+        <button id="submitButton">送信する</button>
+
+        <p id="submittedText">
+
+        </p>
 
         <script type="text/javascript">
-            document.getElementById("thirdButton").onclick = function () {
-                document.getElementById("thirdParagraph").style.color = "red";
-            };
+            document.getElementById("submitButton").onclick = function () {
+                var inputText = document.getElementById("inputForm").value;
+                // alert(inputText);
+                document.getElementById("submittedText").innerText = inputText + "さん、以下が申し込み内容です。"
+            }
         </script>
     </body>
 </html>
