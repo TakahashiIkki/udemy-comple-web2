@@ -3,25 +3,20 @@
     <head>
         <title>jQuery</title>
         <meta charset="UTF-8"/>
+        <style>
+
+        </style>
     </head>
     <body>
         <script src="jquery-3.4.1.min.js"></script>
 
-        <p></p>
-
         <script type="text/javascript">
-            /*
-            $.get("sample.txt", function (data) {
-                console.log(data);
-            });
-             */
+            var regex = /Great/i;
+            var text = "Regex is great!";
 
-            $.ajax("sample.txt").done(function (data) {
-                console.log("通信成功");
-                $("p").html(data);
-            }).fail(function () {
-                alert("データの通信に失敗しました。")
-            })
+            var result = text.search(regex);
+
+            console.log(result);
         </script>
     </body>
 </html>
