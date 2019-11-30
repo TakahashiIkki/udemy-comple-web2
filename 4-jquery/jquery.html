@@ -3,15 +3,36 @@
     <head>
         <title>jQuery</title>
         <meta charset="UTF-8"/>
+        <style>
+            #circle {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 20px;
+                background-color: skyblue;
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+            }
+        </style>
     </head>
     <body>
+        <div id="circle"></div>
+        <div class="square" style="background-color: red"></div>
+        <div class="square" style="background-color: green"></div>
+
         <script src="jquery-3.4.1.min.js"></script>
         <script type="text/javascript">
-            if (typeof jQuery == "undefined") {
-                alert("jQueryがインストールされていません");
-            } else {
-                alert("jQueryが無事インストールされました");
-            }
+            $("#circle").click(function () {
+                console.log("clicked");
+            });
+
+            $(".square").click(function () {
+                console.log("square clicked");
+            });
         </script>
     </body>
 </html>
