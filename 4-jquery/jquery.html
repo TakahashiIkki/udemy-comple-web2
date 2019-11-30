@@ -6,6 +6,9 @@
     </head>
     <body>
         <script src="jquery-3.4.1.min.js"></script>
+
+        <p></p>
+
         <script type="text/javascript">
             /*
             $.get("sample.txt", function (data) {
@@ -15,7 +18,7 @@
 
             $.ajax("sample.txt").done(function (data) {
                 console.log("通信成功");
-                console.log(data)
+                $("p").html(data);
             }).fail(function () {
                 alert("データの通信に失敗しました。")
             })
