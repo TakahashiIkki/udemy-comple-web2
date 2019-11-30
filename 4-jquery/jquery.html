@@ -4,44 +4,23 @@
         <title>jQuery</title>
         <meta charset="UTF-8"/>
         <style>
-            #circle {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                margin: 20px;
-                background-color: skyblue;
-            }
-
-            .square {
-                width: 100px;
-                height: 100px;
-                background-color: darkorange;
-                margin: 20px;
+            #fadeinText {
+                display: none;
             }
         </style>
     </head>
     <body>
-        <div id="circle"></div>
-
-        <div class="square"></div>
-        <div class="square"></div>
+        <p id="fadeToggleText">このテキストは反転します</p>
+        <button id="fadeToggleButton">テキストをToggleする</button>
 
         <script src="jquery-3.4.1.min.js"></script>
         <script type="text/javascript">
-            $("#circle").click(function () {
-                console.log($("#circle").css("width"));
-
-                $("#circle")
-                    .css("width", "300px")
-                    .css("height", "300px")
-                    .css("background-color", "limegreen");
-
-
-            });
-
-            $(".square").click(function () {
-                // $(".square").css("display", "none");
-                $(this).css("display", "none");
+            $("#fadeToggleButton").click(function () {
+                if($("#fadeToggleText").css("display") === "none") {
+                    $("#fadeToggleText").fadeIn("slow");
+                } else {
+                    $("#fadeToggleText").fadeOut("slow");
+                }
             });
         </script>
     </body>
