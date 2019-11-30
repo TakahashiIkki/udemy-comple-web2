@@ -11,27 +11,17 @@
                 margin: 20px;
                 background-color: skyblue;
             }
-
-            .square {
-                width: 100px;
-                height: 100px;
-                margin: 20px;
-            }
         </style>
     </head>
     <body>
         <div id="circle"></div>
-        <div class="square" style="background-color: red"></div>
-        <div class="square" style="background-color: green"></div>
+
+        <p>ここに文字が入ります。</p>
 
         <script src="jquery-3.4.1.min.js"></script>
         <script type="text/javascript">
             $("#circle").click(function () {
-                console.log("clicked");
-            });
-
-            $(".square").click(function () {
-                console.log("square clicked");
+                $("p").html("#circleがクリックされた");
             });
         </script>
     </body>
